@@ -4,6 +4,7 @@
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
     \usepackage{fontspec}
+    \usepackage{fontawesome}
     % set fonts
     %\setmainfont[
     %    BoldFont={Gill Sans Bold}, 
@@ -128,9 +129,6 @@
         \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
         \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
 
-
-
-
     
     % personal date
     \firstname{Masaru}
@@ -138,8 +136,13 @@
     %\title {???}
     \address{43 rue du Puits Neuf}{13100 Aix en Provence}{France}
     \mobile{+33 (0)7 83 15 24 33}
-    \email{mnsaru22@gmail.com}
+    \email{masaru.NAGASO@univ-amu.fr}
     \social[skype]{mnsaru}
+    \extrainfo{ \emailsymbol\emaillink{mnsaru22@gmail.com}, \\
+                \faGithub\href{https://github.com/mnagaso}{mnagaso},
+                \faLinkedin\href{https://www.linkedin.com/in/nagaso-masaru-6b20705a/}{mnagaso},
+               }
+    
     %\homepage{google.com}\vspace{10 mm}
     \photo[3cm][0pt]{myface.png}
     %\quote{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.}
@@ -155,10 +158,18 @@
    
     \maketitle
     
+    \section{Experience}
+    \cventry{2018-}{Scientific researcher}{}{Protisvalor/IUT-LCND, Aix-en-Procenve, France}{}{
+    Numerical acoustic studies on propagation of a wave in a Sodium-cooled Fast Reactor.\newline
+    Development of simulation codes/scripts package for a Spectral-element full-wave simulation and semi-automated pre/post processing. \newline
+    }  % arguments 3 to 6 can be left empty
+    
+    
     \section{Education}
     \cventry{2015--2018}{PhD}{Aix-Marseille University}{Aix-en-Procenve, France}{}{Acoustics}  % arguments 3 to 6 can be left empty
     \cventry{2011--2014}{MSc}{The University of Tokyo}{Tokyo, Japan}{}{Ocean Technology, Policy and Environment}
     \cventry{2007--2011}{BSc}{Tokyo University of Science}{Chiba, Japan}{}{Mechanical Engineering}
+
 
     \section{PhD thesis}
     \cvitem{title}{\emph{Study of ultrasound wave propagation in a heterogeneous fluid medium for the continuous monitoring of an operating sodium-based nuclear reactor}}
@@ -166,7 +177,7 @@
         Dr. Dimitri Komatitsch, Prof. Joseph Moysan\newline
         (Laboratoire de mécanique et d’acoustique(LMA), CNRS/L’université d’Aix-Marseille)\newline
         Dr. Christian Lhuillier\newline
-        (Le Laboratoire d'instrumentations et d'essais technologiques, CEA Cadarache)\newline
+        (Le Laboratoire d'instrumentations et d'essais technologiques, CEA Cadarache)
     }
     \cvitem{description}{
         Development of three-dimensional wave propagation simulations.\newline
@@ -182,8 +193,9 @@
         (The Underwater Acoustic System Engineering Laboratory, Institute of Industrial Science, The University of Tokyo)
     }
     \cvitem{description}{
-        Development of software for acoustic signal processing and 3D visualization.\newline
-        Development of computational simulation program for acoustic propagation analysis.\newline
+        Acoustic measurement of fish bodies using a high-frequency focusing acoustic probe.
+        Development of a software for acoustic signal processing and 3D visualization of fish bodies, acoustic reflection intensity image of body surface and internal organs.\newline
+        FDTD simulation of a wave propagation inside of fish bodies.\newline
         (Implementation of FDTD for elastic wave and PML damping layer.)
     }
 
@@ -199,38 +211,46 @@
         Reformation of a visualization software for the calculation models and results.
     }
 
-    \section{Private development}
+
+    \section{Weekend projects}
     % random walk
     \cvitem{subject}{\emph{Network clustering application}}
     \cvitem{description}{
-        Implementation of hierarchal network clustering code based on Map equation and Modularity.\newline
-        Louvain method is applied for the trial routine of cluster division.\newline
-        Page rank calculation with power iteration method is used for calculation of initial transition provability.
+        Implementation of hierarchical network clustering code based on Map equation and Modularity.\newline
+        Keywords: Map equation, Modularity, Louvain method, Page rank,
     }
      
     % Nonlinear mixed effect library
     \cvitem{subject}{\emph{The numerical computation library for estimation of subject times}}
     \cvitem{description}{
-        Python library for calculating the subject time (i.e. temporal position indicating the degree of progress in a disease) writen in C++ and wrapped by swig.\newline
-        In the calculation routine of this library, nonlinear mixed effect modeling was implemented for calculating averaged curves of multiple biomarkers (i.e. fixed effects) and random parts which depends on each subject.\newline
-        Golden searcha algorithm was also implemented during the routine.\newline
+        Python library for calculating the subject time (i.e. temporal position indicating the degree of progress in a disease) written in C++ and wrapped by swig.\newline
+        In the calculation routine of this library, nonlinear mixed effect modeling was implemented for calculating averaged curves of multiple bio-markers (i.e. fixed effects) and random parts which depends on each subject.\newline
+        Golden search algorithm was also implemented during the routine.\newline
         This code was developed as a part of research project by Dr. Keita Tokuda, a project researcher at The University of Tokyo Hospital.\newline
         Keywords: Maximum likelihood estimation, Nonlinear mixed effect model, Golden search.
     }
+
+    % Deep learning NLP
+    \cvitem{subject}{\emph{Improvement of multi-label classification using C2AE and fine-tuning with Transformer-lm}}
+    \cvitem{description}{
+        In order to improve the accuracy of multi-label classification task with Canonical Correlated AutoEncoder (C2AE) for limited amount of input texts, we applied the method of "Improving Language Understanding by Generative Pre-Training" so called (finetune-transformer-lm). \newline
+        Keywords: Natural language processing, Deep Learning, multi-label classification, Transformer, Language model, C2AE
+    }   
  
     % Word-net generation and analysis scripts
-    \cvitem{subject}{\emph{Generation of semantic networks around popular products and generation of learning model for making a hit}}
+    \cvitem{subject}{\emph{Generation of semantic networks with review texts of popular products and generation of learning model for creating a new hit product}}
     \cvitem{description}{
         This is a part of another research project on "computational creativity" by Dr. Akihito Sudo, a researcher/research manager at The University of Shizuoka.\newline
         First, we generates two semantic networks, one is generated from reviews texts written for a hit product and another is from reviews for multiple products in the category which the target product belongs to.\newline
         By using these semantic networks and difference between them as a data set, we are trying to generate learning model to generate keywords for the next hit products.\newline
-        Keywords: word2vec, semantic network, machine learning, SMOTE.
+        Keywords: Natural language processing, word2vec, Semantic network, Machine learning, SMOTE.
     }
     % web scraper
     \cvitem{subject}{\emph{Web scraping scripts}}
     \cvitem{description}{
-        This is a set of scraping scripts developed for gathering texts from web for making semantic networks concerning the above project.\newline
+        This is a set of scraping scripts developed for gathering review texts from Amazon.com for generating semantic networks concerning the above project.\newline
         A python library "Scrapy" was used as the engine of scraping spiders.
+        Keywords: Web Scraping, 
     }
         
 
@@ -242,7 +262,7 @@
     \cvline{Operating systems}{Linux, OS X, Windows, Slurm}
     \cvline{Programming languages etc.}{C, C++, C\#, Fortran, Python, Swig, MPI, OpenMP, VTK, HDF5, Chuck, Markdown, \LaTeX{}}
     \cvline{Web tools}{xhtml, css, JavaScript, Node.js, MySQL, Mongodb}
-    \cvline{Development environments}{Vim, Eclipse, NetBeans, Xcode, Microsoft Visual Studio, Visual Studio Code, Git, SVN, Redmine, Bitbucket}
+    \cvline{Development environments}{Docker, Vim, Visual Studio Code, Git, SVN, Redmine, Bitbucket}
     \cvline{Analysis tools}{Jupyter notebook (lab), Matplotlib, Holoviews}
     \cvline{Other softwares}{Microsoft Word, Excel, PowerPoint, Adobe Photoshop, Adobe Illustrator, Gimp, Inkscape}
     \cvline{Music theory}{Knowledge and experiences of modal/codal music}
