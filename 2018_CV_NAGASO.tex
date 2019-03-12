@@ -1,11 +1,11 @@
 \documentclass[9pt,a4paper]{moderncv}
+    \usepackage{fontspec}
+    \usepackage{fontawesome}
     \usepackage{url}
     \usepackage{amsmath}
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
-    \usepackage{fontspec}
-    \usepackage{fontawesome}
-    % set fonts
+   % set fonts
     %\setmainfont[
     %    BoldFont={Gill Sans Bold}, 
     %    ItalicFont={Gill Sans Italic},
@@ -129,6 +129,9 @@
         \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
         \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
 
+    % definition for put day month and year
+    \usepackage{datetime}
+	    \def\dates[#1.\monthname[#2].#3-#4.\monthname[#5].#6]{{#1}{#2}{#3}--{#4}{#5}{#6}}
     
     % personal date
     \firstname{Masaru}
@@ -143,7 +146,7 @@
                 \faLinkedin\href{https://www.linkedin.com/in/nagaso-masaru-6b20705a/}{mnagaso},
                }
     
-    %\homepage{google.com}\vspace{10 mm}
+    \homepage{https://mnagaso.github.io}\vspace{10 mm}
     \photo[3cm][0pt]{myface.png}
     %\quote{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.}
     
@@ -159,11 +162,15 @@
     \maketitle
     
     \section{Experience}
-    \cventry{2018-}{Scientific researcher}{}{Protisvalor/IUT-LCND, Aix-en-Procenve, France}{}{
+    \cventry{01.oct.2018--31.mar.2019}{Scientific researcher}{}{Protisvalor/IUT-LCND, Aix-en-Procenve, France}{}{
     Numerical acoustic studies on propagation of a wave in a Sodium-cooled Fast Reactor.\newline
     Development of simulation codes/scripts package for a Spectral-element full-wave simulation and semi-automated pre/post processing. \newline
     }  % arguments 3 to 6 can be left empty
     
+    \cventry{02.fev.2015--31.may.2018}{PhD candidate}{}{CEA Cadarache, Saint-Paul-lez-Durance, France}{}{
+    Research and development on numerical modeling method for fluctuating acoustic medium.\newline 
+    2D and 3D elasto-acoustic wave propagation simulation in Sodium-cooled fast reactors.\newline 
+    }  % arguments 3 to 6 can be left empty
     
     \section{Education}
     \cventry{2015--2018}{PhD}{Aix-Marseille University}{Aix-en-Procenve, France}{}{Acoustics}  % arguments 3 to 6 can be left empty
