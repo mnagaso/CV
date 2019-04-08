@@ -146,7 +146,7 @@
                 \faLinkedin\href{https://www.linkedin.com/in/nagaso-masaru-6b20705a/}{mnagaso},
                }
     
-    \homepage{https://mnagaso.github.io}\vspace{10 mm}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\homepage{https://mnagaso.github.io}\vspace{10 mm}
     \photo[3cm][0pt]{myface.png}
     %\quote{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.}
     
@@ -162,14 +162,14 @@
     \maketitle
     
     \section{Experience}
-    \cventry{01.oct.2018--31.mar.2019}{Scientific researcher}{}{Protisvalor/IUT-LCND, Aix-en-Procenve, France}{}{
-    Numerical acoustic studies on propagation of a wave in a Sodium-cooled Fast Reactor.\newline
-    Development of simulation codes/scripts package for a Spectral-element full-wave simulation and semi-automated pre/post processing. \newline
+    \cventry{01.oct.2018--31.may.2019}{Scientific researcher}{}{Protisvalor/IUT-LCND, Aix-en-Procenve, France}{}{
+    Numerical acoustic studies on propagation of a wave in a Sodium-cooled Fast Reactor using Spectral Element Method..\newline
+    Development of an utility package for Spectral-element full-wave simulation code SPECFEM2D and SPECFEM3D. This package is developed to add an user interface for simulation configuration, mesh preparation and some additional post-processing functions. Also, this package installs/compiles all the libraries including SPECFEM automatically for any kind of modern operating systems.\newline
     }  % arguments 3 to 6 can be left empty
     
     \cventry{02.fev.2015--31.may.2018}{PhD candidate}{}{CEA Cadarache, Saint-Paul-lez-Durance, France}{}{
-    Research and development on numerical modeling method for fluctuating acoustic medium.\newline 
-    2D and 3D elasto-acoustic wave propagation simulation in Sodium-cooled fast reactors.\newline 
+    Research and development on numerical modeling method for a wave propagation in a realistic fluctuating acoustic medium.\newline 
+    2D and 3D elasto-acoustic wave propagation simulation in Sodium-cooled fast reactors, which is an application for acoustic thermometry to detect accurate and instantaneous temperature in sodium jets.\newline 
     }  % arguments 3 to 6 can be left empty
     
     \section{Education}
@@ -187,10 +187,9 @@
         (Le Laboratoire d'instrumentations et d'essais technologiques, CEA Cadarache)
     }
     \cvitem{description}{
-        Development of three-dimensional wave propagation simulations.\newline
-        Application of Spectral element method (SEM) and Finite-element time-domain (FDTD) methods.\newline
-        Acousto-elastic coupling problems.
-        Use of High performance computiong (HPC), CURIE@TGCC/CEA, OCCIGEN@CINES.
+        Application of spectral element method and finite-element time-domain methods for wave propagation simulation in a heterogeneous medium.\newline
+	Numerical modeling of a wave propagation in side of 4th generation sodium cooled fast reactor. \newline
+	Two french super computers, CURIE@TGCC/CEA, OCCIGEN@CINES were used for the 4D (3D wave simulation + temporal fluctuating heterogeneous situation) massive calculations.
     }
 
     \section{Master thesis}
@@ -266,9 +265,9 @@
     \pagebreak
     
     \section{Technical skills}
-    \cvline{Operating systems}{Linux, OS X, Windows, Slurm}
+    \cvline{Operating systems}{Linux, OS X, Windows, Slurm, Gcloud}
     \cvline{Programming languages etc.}{C, C++, C\#, Fortran, Python, Swig, MPI, OpenMP, VTK, HDF5, Chuck, Markdown, \LaTeX{}}
-    \cvline{Web tools}{xhtml, css, JavaScript, Node.js, MySQL, Mongodb}
+    \cvline{Web tools}{xhtml, css, JavaScript, Node.js, MySQL, Mongodb, Google Big Query}
     \cvline{Development environments}{Docker, Vim, Visual Studio Code, Git, SVN, Redmine, Bitbucket}
     \cvline{Analysis tools}{Jupyter notebook (lab), Matplotlib, Holoviews}
     \cvline{Other softwares}{Microsoft Word, Excel, PowerPoint, Adobe Photoshop, Adobe Illustrator, Gimp, Inkscape}
@@ -329,38 +328,37 @@
     } 
   
   
-    %\clearpage
-    %%-----       letter       ---------------------------------------------------------
-    %% recipient data
-
-
-    %% recipient data
-    %\recipient{Center for Ultrasound Research \& Translation\\Massachusetts General Hospital}{101 Merrimac Street, 3rd Floor\\Boston, MA 02114}
-    %\date{July 03, 2018}
-    %\opening{Dear Dr. Anthony Samir}
-    %\closing{Yours faithfully,}
+    \clearpage
+    %-----       letter       ---------------------------------------------------------
+    % recipient data
+    \recipient{Laboratory of Mechanics and Acoustics\\CNRS Marseille}{4 impasse Nikola Tesla\\13013, Marseille, France}
+    \date{April 08, 2019}
+    \opening{To whom it may concern}
+    \closing{Yours faithfully,}
     
-    %\makelettertitle
+    \makelettertitle
 
   
-    %I appreciate your considering my application for the position “Post-Doctoral Scholar/ Research Scientist - MGH Center for Ultrasound Research and Translation”. My background and skills in laboratory techniques will prove to be an effective match for your qualifications requirements.
+    I appreciate your considering my application for the position "Expert(e) en calcul scientifique (H/F)". My background and skills in laboratory techniques will prove to be an effective match for your qualifications requirements.
     
-    %My main academic/engineering interests are on acoustics and numerical analysis. The interest in acoustics have been cultivated through my experiences of Jazz studies which is one of my important lifeworks.
-    %In order to study another aspect of “sound”,  as my master’s research, I learned underwater (ocean) acoustics and developed an acoustic CT scanning method for sex/species detection using 25 MHz focusing probe. Development of numerical codes for signal processing and 3D image reconstruction are also important experiences which may be great helps for this postdoctoral position which concerns acoustic imaging.
+    My main academic/engineering interest is on the techniques of numerical modeling especially for wave propagation. The interest in acoustics have been cultivated through my experiences of Jazz studies which is one of my important lifeworks.
+    In order to study another aspect of “sound”,  as my master’s research, I started learning underwater (ocean) acoustics and developed an acoustic CT scanning method for sex/species detection using 25 MHz focusing probe. For this objective, I developed numerical codes for signal processing, image reconstruction and in-house FDTD code (MPI was used for parallelization) for simulating the wave propagation in side of fish body, which were important experiences that motivated me to progress my study to the direction of numerical techniques.
     
-    %In order to expand my experience on acoustics and numerical analysis, I carried out (mainly) numerical studies on wave propagation in a cooling circuit of Sodium-cooled Fast Reactors with French Atomic Commission (CEA) and French Centre National de la Recherche Scientifique (CNRS).  During this Ph.D.  I experienced development of a numerical code for wave propagation simulation using Spectral Element Method, which is a higher-order finite element method.
-    %For the calculations, we used two french super computers (CURIE at Très Grand Centre de calcul du CEA, OCCIGEN at Centre Informatique National de l’Enseignement Supérieur). As the numerical tool for calculation of wave propagation, I carried out further development of SPECFEM2D/3D (\url{https://geodynamics.org/cig/software/specfem3d/}) which have been developed and used for High Performance Computing (HPC) environment (which uses GPGPU, MPI, vectorization and Fortran).
+    In order to expand my experience on acoustics and numerical analysis, I carried out (mainly) numerical studies on wave propagation in a cooling circuit of Sodium-cooled Fast Reactors with French Atomic Commission (CEA) and French Centre National de la Recherche Scientifique (CNRS).
+    In this PhD project, I experienced to use SPECFEM3D which is the target of this post-doc project. For the specific objectives of my PhD study, I needed to modify the small part of SPECFEM3D i.e. taking the CFC calculated 3D temperature field into SPECFEM3D calculation. 
+    At the same time, I developed additional pre/post processing tools e.g. a C++ code for conversion of mesh data format exodos->SPECFEM3D, signal file format converter (numerous ASCII file to one hdf5 file, then to VTK for 3D visualization of a wave front).
+    To modify partially the code of SPECFEM and implementing additional utility, I have carefully read the codes of SPECFEM3D and understood its composition, which mush be an essential requirement for the candidates of this post-doc position.
+    During this PhD, we used two french super computers (CURIE at Très Grand Centre de calcul du CEA, OCCIGEN at Centre Informatique National de l’Enseignement Supérieur) for running a 3D calculation of SPECFEM3D, that is also the good experience required for this position.
     
-    %Through these studies, I obtained knowledge and experiences of operations and development of scientific numerical codes under linux environment including HPC.
+    In my private development projects, I often use Docker and Swig. Docker is the software which composes an linux environment with all dependencies (i.e. linux libraries) in the form of ready-to-use, thus recently, modern numerical libraries initially attach the docker configuration file. With using docker, users may avoid time consuming steps for dependencies' installation and compiling the numerical codes. 
+    Swig is the tool which add a python wrapper (or API) to the codes written in compiled languages e.g. Fortran, C++ etc. This is also the general composition of modern numerical code i.e. the part of library which do the heavy computation are written in C++ or Fortran then simulation configuration, passing the input data (mesh file, in/output paths) and retrieving the result with the python functions implemented with swig (or other tools). 
+    These experiences of software development may be a help the further development of SPECFEM3D.
     
-    %Through the private projects, I experienced not only numerical computation techniques of acoustics but also implementations of algorithms belonging to other scientific domains e.g. network clustering, nonlinear mixed effect model and machine learning. 
-    %Please find some details of those works in my CV at the “private development” section.
+    My career goal is to familiarize with HPC computing and write my own simulation code optimized for HPC use.
+    Thus the research objective of this position and expected experiences that I will obtain exactly meet with my career path.
     
-    %My career goal is to be a researcher who studies multidisciplinary subjects between acoustics and computational techniques.
-    %The research subject of this position is one of modern applications of acoustic techniques, thus this is exactly what I want to pursuit in order to expand my academic/engineering interests.
-    
-    %Thank you for your consideration. I would be grateful for the opportunity to speak with you in person regarding my qualifications for this position; please let me know if I can provide you with any additional information.
+    Thank you for your consideration. I would be grateful for the opportunity to speak with you in person regarding my qualifications for this position; please let me know if I can provide you with any additional information.
   
-    %\makeletterclosing
+    \makeletterclosing
 
     \end{document}
