@@ -1,6 +1,6 @@
 #!/bin/sh
 
-fname=2018_CV_NAGASO
+fname=2021_CV_NAGASO
 bibtex $fname
 lualatex $fname
 bibtex $fname
